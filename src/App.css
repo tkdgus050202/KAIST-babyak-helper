@@ -1,0 +1,438 @@
+:root {
+  width: 100%;
+
+  --kaist-blue: #004191;
+  --kaist-blue-light: #0a5bd8;
+  --kaist-blue-glow: rgba(0, 65, 145, 0.45);
+
+  --glass-bg: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(255, 255, 255, 0.12);
+
+  --text-primary: rgba(255, 255, 255, 0.92);
+  --text-secondary: rgba(255, 255, 255, 0.65);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* 2. App 전체 영역 */
+.app {
+  width: 100vw !important;  /* 화면 전체 너비 강제 */
+  min-height: 100vh;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;    /* 가로 정중앙 강제 */
+  justify-content: flex-start;
+  padding: 4rem 1.5rem;
+  box-sizing: border-box;
+  margin: 0 auto !important;         /* 좌우 여백 자동 계산 */
+}
+.hero {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  width: 100%;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background-color: rgba(100, 108, 255, 0.15);
+  color: rgba(255, 255, 255, 0.86);
+  margin-bottom: 0.75rem;
+}
+
+.hero-title {
+  font-size: 2.2rem;
+  margin: 0 0 0.75rem;
+}
+
+.hero-subtitle {
+  margin: 0 auto;         /* 서브타이틀 박스 자체를 중앙으로 */
+  max-width: 32rem;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+}
+
+.search-panel {
+  margin-top: 2rem;
+  max-width: 640px;
+  width: 100%;
+  text-align: left;
+}
+
+.search-input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background-color: rgba(20, 20, 27, 0.9);
+  color: inherit;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.search-input-indicator {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-options {
+  margin-top: 1rem;
+  padding: 1.25rem 1.5rem 1.4rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background-color: rgba(15, 15, 23, 0.95);
+  backdrop-filter: blur(16px);
+}
+
+.filter-group + .filter-group {
+  margin-top: 1.25rem;
+}
+
+.filter-title {
+  margin: 0 0 0.5rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip {
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  padding: 0.4rem 0.9rem;
+  font-size: 0.85rem;
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+  transition: background-color 0.18s, border-color 0.18s, color 0.18s;
+}
+
+.chip--selected {
+  background-color: #646cff;
+  border-color: #646cff;
+  color: white;
+  box-shadow: 0 2px 8px rgba(100, 108, 255, 0.4);
+}
+
+.search-button {
+  margin-top: 1.4rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #646cff, #8f6bff);
+  color: white;
+  cursor: pointer;
+}
+
+.search-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.results {
+  margin-top: 4rem;
+  width: 100%;
+  text-align: center;
+}
+
+.results-title {
+  margin: 0 0 1rem;
+  font-size: 1.3rem;
+}
+
+.results-empty {
+  margin: 0;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.card-grid {
+  display: grid;
+  /* 핵심: 한 줄에 2개씩 (가로 2열) */
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 2rem;
+  width: 100%;
+  max-width: 800px; /* 4개(2*2)일 때 가장 보기 좋은 너비 */
+  margin: 2rem auto 0;
+}
+
+.restaurant-card {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  overflow: hidden; /* 이미지가 둥근 모서리를 넘지 않게 */
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant-card:hover {
+  border-color: rgba(100, 108, 255, 0.6);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  transform: translateY(-2px);
+}
+
+.restaurant-name {
+  margin: 0 0 0.35rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.restaurant-meta {
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding-inline: 1.25rem;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .hero-badge {
+    background-color: rgba(100, 108, 255, 0.1);
+    color: #343a40;
+  }
+
+  .hero-subtitle {
+    color: #4b5563;
+  }
+
+  .search-input {
+    background-color: #ffffff;
+    border-color: rgba(0, 0, 0, 0.08);
+  }
+
+  .search-options {
+    background-color: #ffffff;
+    border-color: rgba(0, 0, 0, 0.06);
+  }
+
+  .chip {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .results-empty {
+    color: #4b5563;
+  }
+
+  .restaurant-card {
+    background-color: #f5f5f5;
+    border-color: rgba(0, 0, 0, 0.08);
+  }
+
+  .restaurant-meta {
+    color: #4b5563;
+  }
+
+  .map-link {
+    background-color: #eeeefb;
+  }
+
+}
+
+.container {
+  width: 100% !important;
+  max-width: 640px !important;       /* 너무 넓어지지 않게 고정 */
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;    /* 내부 요소들 중앙 정렬 */
+  margin: 0 auto !important;
+}
+
+/* 카드 내부 레이아웃 */
+.card-content {
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+
+/* 숫자 표시 (1, 2, 3) */
+.restaurant-rank {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #646cff;
+  min-width: 1.5rem;
+}
+
+
+
+.restaurant-info {
+  flex-grow: 1; /* 정보 영역이 가운데 꽉 차게 */
+}
+
+/* 지도 보기 버튼 */
+.map-link {
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  background-color: rgba(100, 108, 255, 0.1);
+  color: #646cff;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  white-space: nowrap; /* 글자 줄바꿈 방지 */
+}
+
+.map-link:hover {
+  background-color: #646cff;
+  color: white;
+}
+
+.restaurant-image-container {
+  position: relative;
+  width: 100%;
+  height: 180px; /* 이미지 높이 고정 */
+}
+
+.restaurant-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 이미지가 비율에 맞게 꽉 차도록 */
+}
+
+/* 이미지 위에 뜨는 순위 배지 */
+.restaurant-rank-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #646cff;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+
+.hero {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-badge {
+  display: inline-flex;
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+
+  background: rgba(0, 65, 145, 0.15);
+  border: 1px solid rgba(0, 65, 145, 0.5);
+  color: #6fb1ff;
+}
+
+.hero-title {
+  margin-top: 1rem;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.search-options,
+.restaurant-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255,255,255,0.08);
+}
+
+.chip {
+  border-radius: 999px;
+  padding: 0.45rem 1rem;
+  font-size: 0.85rem;
+
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.15);
+
+  transition: all 0.25s ease;
+}
+
+.chip:hover {
+  border-color: var(--kaist-blue);
+  box-shadow: 0 0 10px var(--kaist-blue-glow);
+}
+
+.chip--selected {
+  background: linear-gradient(
+    135deg,
+    var(--kaist-blue),
+    var(--kaist-blue-light)
+  );
+  border-color: var(--kaist-blue);
+  box-shadow: 0 6px 20px var(--kaist-blue-glow);
+}
+
+.search-button {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.85rem;
+  border-radius: 999px;
+  border: none;
+
+  font-weight: 600;
+  letter-spacing: 0.05em;
+
+  background: linear-gradient(
+    135deg,
+    var(--kaist-blue),
+    var(--kaist-blue-light)
+  );
+
+  color: white;
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 25px var(--kaist-blue-glow);
+
+  transition: all 0.3s ease;
+}
+
+.search-button:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 12px 35px rgba(0,65,145,0.7);
+}
+

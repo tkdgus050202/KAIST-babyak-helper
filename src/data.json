@@ -1,0 +1,178 @@
+[
+  {
+    "id": 1,
+    "name": "쌈의대가",
+    "category": "한식",
+    "location": "어궁동",
+    "naverUrl": "https://naver.me/GaldMEe2",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20171101_191%2F1509533332029AptdG_JPEG%2FVy1Pmag7jhQx-yxde9h7dXUY.jpg"
+  },
+  {
+    "id": 2,
+    "name": "팬텀팬피그",
+    "category": "고기/구이",
+    "location": "궁동",
+    "naverUrl": "https://naver.me/FSw7Ot7q",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20171110_78%2F1510280536751OUeW6_JPEG%2F_aUEIAK1WpltjYAaMH1bbRVy.JPG.jpg"
+  },
+  {
+    "id": 3,
+    "name": "아소부",
+    "category": "일식",
+    "location": "어은동",
+    "naverUrl": "https://naver.me/Fuz5eLhs",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNTA5MDlfMzMg%2FMDAxNzU3NDE3MDIyMTky.YS26livRNbzKY1aiicB1JgouzktsFw1AfHF91fk9r7kg.XRSETmsZeZIHjhwlbM698q_IuYKf1TJvS5bnpbyjUUsg.JPEG%2F5ED7B6F7-3852-4E11-9B42-594FA12CAFE1.jpeg%3Ftype%3Dw1500_60_sharpen"
+  },
+  {
+    "id": 4,
+    "name": "요시다",
+    "category": "일식",
+    "location": "어은동",
+    "naverUrl": "https://naver.me/FfeoCc9G",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20171102_4%2F1509590993682DEkEj_JPEG%2F70PyzoXZ38r7OuC12GO03u5Y.jpg"
+  },
+  {
+    "id": 5,
+    "name": "무어",
+    "category": "양식",
+    "location": "어은동",
+    "naverUrl": "https://naver.me/5Q372JpJ",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20201019_268%2F1603083585250fVXf0_JPEG%2FsV2M4DkH15b1ec23EV5Hp0qE.jpeg.jpg"
+  },
+  {
+    "id": 6,
+    "name": "달구지막창",
+    "category": "고기/구이",
+    "location": "어궁동",
+    "naverUrl": "https://naver.me/xQe264Ck",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20190117_261%2F1547733878322qIQq4_JPEG%2FqgJ3F_ZEXXP_tIddT37RvXIs.jpg"
+  },
+  {
+    "id": 7,
+    "name": "맛존 닭갈비",
+    "category": "한식",
+    "location": "궁동",
+    "naverUrl": "https://naver.me/xLWArdeZ",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20231218_235%2F1702853074659Hrc4k_JPEG%2FKakaoTalk_20231218_064202681_04.jpg"
+  },
+  {
+    "id": 8,
+    "name": "마인네하우스",
+    "category": "한식",
+    "location": "궁동",
+    "naverUrl": "https://naver.me/xxY2AVzB",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20250818_210%2F1755513756885OeHj1_PNG%2F%25B8%25B6%25C0%25CE%25B3%25D7%25C7%25CF%25BF%25EC%25BD%25BA_%25B7%25CE%25B0%25ED_%25BC%25F6%25C1%25A4.png"
+  },
+  {
+    "id": 9,
+    "name": "맛고을",
+    "category": "한식",
+    "location": "어은동",
+    "naverUrl": "https://naver.me/5huaLAQx",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20200201_223%2F15805503743456WImJ_JPEG%2FHZbtbOHabR_Fk-x6rS3prkXq.jpeg.jpg"
+  },
+  {
+    "id": 10,
+    "name": "잇마이타이",
+    "category": "아시안",
+    "location": "어은동",
+    "naverUrl": "https://naver.me/5du4DMRt",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220129_229%2F1643445449356YqHLz_JPEG%2FF4E7C2F6-E23D-473B-A3D2-34FE3629BD2A.jpeg"
+  },
+  {
+    "id": 11,
+    "name": "초원돌구이",
+    "category": "고기/구이",
+    "location": "궁동",
+    "naverUrl": "https://map.naver.com/p/entry/place/35235236?c=18.41,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202602210221&locale=ko&svcName=map_pcv5",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20241228_277%2F17353759589369h0eu_PNG%2F1000007852.png"
+  },
+  {
+    "id": 12,
+    "name": "닭섬",
+    "category": "양식",
+    "location": "궁동",
+    "naverUrl": "https://map.naver.com/p/entry/place/15966403?c=18.67,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202602210225&locale=ko&svcName=map_pcv5",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20250113_230%2F1736769180577VpBsm_JPEG%2FKakaoTalk_20250113_183526110.jpg"
+  },
+  {
+    "id": 13,
+    "name": "1987 신샤브",
+    "category": "한식",
+    "location": "어은동",
+    "naverUrl": "https://map.naver.com/p/entry/place/1951860470?c=19.68,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202602210227&locale=ko&svcName=map_pcv5",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20241212_285%2F1733976668667d2toh_JPEG%2FIMG_5585.jpeg"
+  },
+  {
+    "id": 14,
+    "name": "어랑",
+    "category": "한식",
+    "location": "어은동",
+    "naverUrl": "https://map.naver.com/p/entry/place/15967558?c=19.44,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202602210228&locale=ko&svcName=map_pcv5",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20251005_178%2F17596372029547Wglk_JPEG%2F1000001508.jpg"
+  },
+  {
+    "id": 15,
+    "name": "왕비성",
+    "category": "중식",
+    "location": "어은동",
+    "naverUrl": "https://map.naver.com/p/entry/place/15966932?c=19.29,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202602210239&locale=ko&svcName=map_pcv5",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNTEwMTdfMjU5%2FMDAxNzYwNjMxOTQzNzQ3.UD5SpkO3_annqQKg_9sozCuFqotbdRVOeY2fZhCS14kg.iqogl0pMfUCiEXnDetBUskTvK6eowmwRXAMnG64zMIkg.JPEG%2FF5DF6267-B513-4062-BCD3-7370F71E8C99.jpeg%3Ftype%3Dw1500_60_sharpen"
+  },
+  {
+    "id": 16,
+    "name": "반마이",
+    "category": "아시안",
+    "location": "어은동",
+    "naverUrl": "https://map.naver.com/p/entry/place/1226262636?c=20.00,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202602210229&locale=ko&svcName=map_pcv5",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20250617_58%2F17501572971583AJEN_JPEG%2F%25B4%25DC%25C3%25BC%25C4%25C6_01.jpg"
+  },
+  {
+    "id": 17,
+    "name": "골목짜장",
+    "category": "중식",
+    "location": "궁동",
+    "naverUrl": "https://map.naver.com/p/entry/place/2072493185?c=20.00,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202602210230&locale=ko&svcName=map_pcv5",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNTExMjRfMTE3%2FMDAxNzYzOTcxNjgzMDEy.WDB968SWTGxMJWysMfRClUKNhFG0yEhdvRHHZyuFKyMg.XtRmMOIc1jUWCjHed56TOKYibpbhxHsHOa2Jk4ipn2sg.JPEG%2FA595605A-687C-4AFF-98EC-EA5B73F0498E.jpeg%3Ftype%3Dw1500_60_sharpen"
+  },
+  {
+    "id": 18,
+    "name": "구시앙",
+    "category": "중식",
+    "location": "어은동",
+    "naverUrl": "https://map.naver.com/p/entry/place/1155458592?c=18.94,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202602210231&locale=ko&svcName=map_pcv5",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230116_265%2F1673828086873lA1pD_JPEG%2F535DC1C3-0E64-47A1-80E9-E69AC69612EE.jpeg"
+  },
+  {
+    "id": 19,
+    "name": "엉클부대찌개",
+    "category": "한식",
+    "location": "어은동",
+    "naverUrl": "https://map.naver.com/p/entry/place/1718191604?c=19.14,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202602210232&locale=ko&svcName=map_pcv5",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20190322_234%2F1553259752849Pif81_JPEG%2Ffo09_08fkokaWH6DTGXs9EDo.jpg"
+  },
+  {
+    "id": 20,
+    "name": "다다카츠",
+    "category": "일식",
+    "location": "어은동",
+    "naverUrl": "https://map.naver.com/p/entry/place/1528814704?c=19.14,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202602210233&locale=ko&svcName=map_pcv5",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20250730_247%2F1753807169720L3dKd_JPEG%2FIMG_8270.jpeg"
+  },
+  {
+    "id": 21,
+    "name": "부라보회관",
+    "category": "고기/구이",
+    "location": "어궁동",
+    "naverUrl": "https://map.naver.com/p/entry/place/1671466074?c=19.54,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202602210235&locale=ko&svcName=map_pcv5",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230831_4%2F16934641437539YeEw_JPEG%2F1693463664572-3.jpg"
+  },
+  {
+    "id": 22,
+    "name": "정통집",
+    "category": "고기/구이",
+    "location": "궁동",
+    "naverUrl": "https://map.naver.com/p/entry/place/1616801143?c=19.21,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202602210236&locale=ko&svcName=map_pcv5",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220826_5%2F16615056797057PPY8_JPEG%2F%25B1%25E8%25C4%25A1%25B1%25B8%25C0%25CC%25B9%25DD%25C2%25F9%25B0%25FA%25C7%25D4%25B2%25B2%25BC%25BC%25C6%25C3.jpg"
+  }
+]
