@@ -469,8 +469,9 @@ body {
   text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
 }
 
-.chip[style*="color: rgb(255, 215, 0)"]:hover {
-  background: rgba(255, 215, 0, 0.2) !important;
-  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
-  transform: scale(1.05);
+.chip[style*="color: rgb(255, 234, 0)"]:hover {
+  background: #FFEA00 !important;   /* 호버 시 배경색을 아예 노란색으로 */
+  color: #000000 !important;        /* 글자는 검은색으로 바꿔서 대비 극대화 */
+  box-shadow: 0 0 20px rgba(255, 234, 0, 0.6) !important;
+  transform: translateY(-2px) scale(1.02);
 }
