@@ -124,16 +124,16 @@ function App() {
 
                 {/* 2. 새로운 '상현상현' 섹션 추가 */}
                 <div className="filter-group" style={{ marginTop: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '1.5rem' }}>
-                  <h2 className="filter-title" style={{ color: '#FFEA00', textShadow: '0 0 8px rgba(255, 234, 0, 0.4)' }}>✨ 상현상현이 추천하는 랜덤 맛집!</h2>
+                  <h2 className="filter-title" style={{ color: '#FFEA00', textShadow: '0 0 8px rgba(184, 134, 11, 0.2)' }}>✨ 상현상현이 추천하는 랜덤 맛집!</h2>
                   <div className="chip-row">
                     <button
                       type="button"
                       className="chip sanghyun-random-chip"
                       style={{ 
-                        background: '#FFEA00', /* 배경을 노란색으로 */
-                        color: '#FFEA00',           /* 글씨를 검은색으로 */
-                        borderColor: '#FFEA00',
-                        boxShadow: '0 0 20px rgba(255, 234, 0, 0.6)'
+                        background: 'transparent', 
+                        borderColor: '#B8860B',
+                        color: '#B8860B',
+                        fontWeight: '800',                    // 글자 굵기 강화
                       }}
                       onClick={handleSanghyunRandom}
                     >
