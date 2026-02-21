@@ -5,7 +5,7 @@ import './App.css'
 const LOCATIONS = ['어은동', '어궁동', '궁동']
 const CATEGORY_BUTTONS = [
   { label: '한식', value: '한식' },
-  { label: '고기&구이', value: '고기/구이' },
+  { label: '고기/구이', value: '고기/구이' },
   { label: '일식', value: '일식' },
   { label: '중식', value: '중식' },
   { label: '양식', value: '양식' },
