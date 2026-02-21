@@ -253,11 +253,6 @@ body {
     border-color: rgba(0, 0, 0, 0.08);
   }
 
-  /* 1등은 금색 느낌으로 강조해보기 */
-.restaurant-card:nth-child(1) .restaurant-rank-badge {
-  background: #FFD700; 
-  color: #000;
-}
 
   .restaurant-meta {
     color: #4b5563;
@@ -267,6 +262,33 @@ body {
     background-color: #eeeefb;
   }
 
+}
+
+/* 1등: 금색 (Gold) */
+.restaurant-card:nth-child(1) .restaurant-rank-badge {
+  background: linear-gradient(135deg, #FFD700, #FFB900);
+  color: #332b00; /* 글자를 조금 어둡게 해서 가독성 확보 */
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+}
+
+/* 2등: 은색 (Silver) */
+.restaurant-card:nth-child(2) .restaurant-rank-badge {
+  background: linear-gradient(135deg, #C0C0C0, #A9A9A9);
+  color: #2c2c2c;
+  box-shadow: 0 0 15px rgba(192, 192, 192, 0.3);
+}
+
+/* 3등: 동색 (Bronze) */
+.restaurant-card:nth-child(3) .restaurant-rank-badge {
+  background: linear-gradient(135deg, #CD7F32, #A0522D);
+  color: #ffffff;
+  box-shadow: 0 0 15px rgba(205, 127, 50, 0.3);
+}
+
+/* 공통: 배지 테두리 살짝 추가해서 더 고급스럽게 */
+.restaurant-rank-badge {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-weight: 800 !important;
 }
 
 .container {
