@@ -130,11 +130,10 @@ function App() {
                       type="button"
                       className="chip sanghyun-random-chip"
                       style={{ 
-                        background: 'transparent', 
+                        background: '#FFEA00', /* 배경을 노란색으로 */
+                        color: '#FFEA00',           /* 글씨를 검은색으로 */
                         borderColor: '#FFEA00',
-                        color: '#FFEA00',
-                        fontWeight: '800',                    // 글자 굵기 강화
-                        boxShadow: '0 0 10px rgba(255, 234, 0, 0.2)' // 은은한 광채 효과
+                        boxShadow: '0 0 20px rgba(255, 234, 0, 0.6)'
                       }}
                       onClick={handleSanghyunRandom}
                     >
