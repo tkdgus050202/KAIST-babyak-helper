@@ -24,7 +24,7 @@ function App() {
     setSelectedCategories(allCatValues);
     
     // 선택 후 바로 검색 결과까지 보여주고 싶다면 아래 주석 해제
-    // setTimeout(() => handleSearch(), 0); 
+    setTimeout(() => handleSearch(), 0); 
   }
 
   // 다중 선택 핸들러 (모두 버튼 로직 포함)
