@@ -47,6 +47,19 @@ function App() {
     setIsSearchOpen(false) 
   }
 
+  const getDisplayText = () => {
+    const locText = selectedLocations.length > 0 ? selectedLocations.join(', ') : '';
+    const catText = selectedCategories.length > 0 
+      ? selectedCategories.map(val => CATEGORY_BUTTONS.find(c => c.value === val)?.label).join(', ') 
+      : '';
+
+    if (!locText && !catText) return '밥약 조건을 선택해 주세요';
+    
+    // 위치와 카테고리가 모두 있으면 중간에 ' / '를 넣어 구분
+    if (locText && catText) return `${locText} / ${catText}`;
+    return locText || catText;
+  };
+
   return (
     <main className="app">
       <div className="container">
@@ -56,10 +69,8 @@ function App() {
 
           <section className="search-panel">
             <button type="button" className="search-input" onClick={() => setIsSearchOpen(!isSearchOpen)}>
-              <span>
-                {selectedLocations.length > 0 || selectedCategories.length > 0
-                  ? `선택됨: ${selectedLocations.length + selectedCategories.length}개`
-                  : '밥약 조건을 선택해 주세요'}
+              <span className="search-text-main">
+                {getDisplayText()}
               </span>
               <span className="search-input-indicator">{isSearchOpen ? '접기' : '열기'}</span>
             </button>
