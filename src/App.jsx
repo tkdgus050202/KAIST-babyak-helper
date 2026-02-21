@@ -18,6 +18,15 @@ function App() {
   const [selectedCategories, setSelectedCategories] = useState([])
   const [results, setResults] = useState([])
 
+  const handleSanghyunRandom = () => {
+    setSelectedLocations([...LOCATIONS]);
+    const allCatValues = CATEGORY_BUTTONS.map(c => c.value);
+    setSelectedCategories(allCatValues);
+    
+    // 선택 후 바로 검색 결과까지 보여주고 싶다면 아래 주석 해제
+    // setTimeout(() => handleSearch(), 0); 
+  }
+
   // 다중 선택 핸들러 (모두 버튼 로직 포함)
   const toggleFilter = (item, list, setList, allItems) => {
     if (item === '모두') {
@@ -110,6 +119,26 @@ function App() {
                         onClick={() => toggleFilter(cat.value, selectedCategories, setSelectedCategories, CATEGORY_BUTTONS.map(c => c.value))}
                       >{cat.label}</button>
                     ))}
+                  </div>
+                </div>
+
+                {/* 2. 새로운 '상현상현' 섹션 추가 */}
+                <div className="filter-group" style={{ marginTop: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '1.5rem' }}>
+                  <h2 className="filter-title" style={{ color: '#FFD700' }}>✨ 상현상현이 추천하는 랜덤 맛집!</h2>
+                  <div className="chip-row">
+                    <button
+                      type="button"
+                      className="chip"
+                      style={{ 
+                        background: 'rgba(255, 215, 0, 0.1)', 
+                        borderColor: '#FFD700',
+                        color: '#FFD700',
+                        fontWeight: 'bold'
+                      }}
+                      onClick={handleSanghyunRandom}
+                    >
+                      🎲 고민보다 Go! (전체 랜덤)
+                    </button>
                   </div>
                 </div>
 

@@ -464,3 +464,13 @@ body {
     0 12px 35px rgba(0,65,145,0.7);
 }
 
+/* 상현 추천 섹션 제목과 버튼 강조 */
+.filter-group h2[style*="color: rgb(255, 215, 0)"] {
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.chip[style*="color: rgb(255, 215, 0)"]:hover {
+  background: rgba(255, 215, 0, 0.2) !important;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+  transform: scale(1.05);
+}
