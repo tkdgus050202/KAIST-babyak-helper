@@ -128,9 +128,9 @@ function App() {
                   <div className="chip-row">
                     <button
                       type="button"
-                      className="chip"
+                      className="chip sanghyun-random-chip"
                       style={{ 
-                        background: 'rgba(255, 234, 0, 0.15)', 
+                        background: 'transparent', 
                         borderColor: '#FFEA00',
                         color: '#FFEA00',
                         fontWeight: '800',                    // 글자 굵기 강화

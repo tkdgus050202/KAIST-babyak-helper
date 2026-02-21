@@ -475,3 +475,16 @@ body {
   box-shadow: 0 0 20px rgba(255, 234, 0, 0.6) !important;
   transform: translateY(-2px) scale(1.02);
 }
+
+.sanghyun-random-chip {
+  transition: all 0.3s ease !important;
+}
+
+/* 마우스를 올렸을 때: 배경색과 글씨색을 정반대로! */
+.sanghyun-random-chip:hover {
+  background-color: #FFEA00 !important; /* 배경을 노란색으로 */
+  color: #000000 !important;            /* 글씨를 검은색으로 */
+  border-color: #FFEA00 !important;
+  box-shadow: 0 0 20px rgba(255, 234, 0, 0.6);
+  transform: translateY(-2px);
+}
