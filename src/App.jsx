@@ -69,7 +69,7 @@ function App() {
 
           <section className="search-panel">
             <button type="button" className="search-input" onClick={() => setIsSearchOpen(!isSearchOpen)}>
-              <span className="search-text-main">
+              <span>
                 {getDisplayText()}
               </span>
               <span className="search-input-indicator">{isSearchOpen ? '접기' : '열기'}</span>
