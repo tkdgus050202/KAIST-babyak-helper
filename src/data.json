@@ -174,5 +174,53 @@
     "location": "궁동",
     "naverUrl": "https://map.naver.com/p/entry/place/1616801143?c=19.21,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202602210236&locale=ko&svcName=map_pcv5",
     "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220826_5%2F16615056797057PPY8_JPEG%2F%25B1%25E8%25C4%25A1%25B1%25B8%25C0%25CC%25B9%25DD%25C2%25F9%25B0%25FA%25C7%25D4%25B2%25B2%25BC%25BC%25C6%25C3.jpg"
+  },
+  {
+    "id": 23,
+    "name": "모티프",
+    "category": "양식",
+    "location": "어은동",
+    "naverUrl": "https://map.naver.com/p/entry/place/1632525451?c=19.23,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202602220211&locale=ko&svcName=map_pcv5",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220408_245%2F164941334940196Gkg_JPEG%2F5B0BA142-F960-4950-A4AB-5E6E98C4D711.jpeg"
+  },
+  {
+    "id": 24,
+    "name": "핵밥 충남대점",
+    "category": "일식",
+    "location": "궁동",
+    "naverUrl": "https://map.naver.com/p/entry/place/2070294537?c=18.64,0,0,0,dh&placePath=/home?fromPanelNum=1&additionalHeight=76&timestamp=202602220213&locale=ko&svcName=map_pcv5&additionalHeight=76&timestamp=202602220213&locale=ko&svcName=map_pcv5&fromPanelNum=1",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20251201_93%2F1764548954400SYYia_JPEG%2F1.jpg"
+  },
+  {
+    "id": 25,
+    "name": "작교",
+    "category": "한식",
+    "location": "어궁동",
+    "naverUrl": "https://map.naver.com/p/entry/place/1234184593?c=19.01,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202602220214&locale=ko&svcName=map_pcv5",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20210908_250%2F1631074174272EB5KO_PNG%2FEjGxXcC1Z_j8t_kvhRKhcQBm.png"
+  },
+  {
+    "id": 26,
+    "name": "맑음",
+    "category": "아시안",
+    "location": "어은동",
+    "naverUrl": "https://map.naver.com/p/entry/place/1783125245?c=18.48,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202602220216&locale=ko&svcName=map_pcv5",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230921_200%2F1695291224448fx2ka_JPEG%2F20230921_190034.jpg"
+  },
+  {
+    "id": 27,
+    "name": "잇텐",
+    "category": "일식",
+    "location": "어은동",
+    "naverUrl": "https://map.naver.com/p/entry/place/1736898371?c=19.62,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202602220218&locale=ko&svcName=map_pcv5",
+    "imageUrl": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA4MjhfODUg%2FMDAxNzU2Mzg3MDMzNjQz.XBPjgMGv-pNATGXpkx3KzcUtfXNlLV-sNzb2trJGXc0g.9vUN27rRWa4JuO9WI3IQEJN_rENhp2CIqTuZcg62_Vgg.JPEG%2F20250822_130029.jpg"
+  },
+  {
+    "id": 28,
+    "name": "궁칼국수",
+    "category": "한식",
+    "location": "어은동",
+    "naverUrl": "https://map.naver.com/p/entry/place/35940716?c=19.34,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202602220219&locale=ko&svcName=map_pcv5",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNjAyMTBfMTAw%2FMDAxNzcwNzI2NDIwMTMy.J-MbhJo3rBR8Os57vZsJc_BvxJrsCEfLR_0JJgF5m10g.qgJCYKQ1_dHHUlMWHIQoasBJSfiLMEptGejAumxX9Kog.JPEG%2FBBDCCB3F-63B3-403D-9AD8-6ADDF0E1DA1B.jpeg%3Ftype%3Dw1500_60_sharpen"
   }
 ]
