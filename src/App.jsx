@@ -32,7 +32,7 @@ function App() {
 
     // 랜덤 섞기 및 3개 추출
     const shuffled = [...filtered].sort(() => Math.random() - 0.5);
-    setResults(shuffled.slice(0, 4))
+    setResults(shuffled.slice(0, 3))
     setIsSearchOpen(false) 
   }
 

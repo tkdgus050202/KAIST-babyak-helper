@@ -171,10 +171,10 @@ body {
 .card-grid {
   display: grid;
   /* 핵심: 한 줄에 2개씩 (가로 2열) */
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1.5rem;
   width: 100%;
-  max-width: 800px; /* 4개(2*2)일 때 가장 보기 좋은 너비 */
+  max-width: 1000px; /* 4개(2*2)일 때 가장 보기 좋은 너비 */
   margin: 2rem auto 0;
 }
 
@@ -206,7 +206,7 @@ body {
   color: rgba(255, 255, 255, 0.7);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .app {
     padding-inline: 1.25rem;
   }
@@ -217,6 +217,7 @@ body {
 
   .card-grid {
     grid-template-columns: 1fr;
+    max-width: 500px;
   }
 }
 
