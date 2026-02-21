@@ -2,12 +2,8 @@ import { useState } from 'react'
 import restaurantData from './data.json'
 import './App.css'
 
-// 위치 옵션 상수
-const LOCATIONS = ['모두', '어은동', '어궁동', '궁동']
-
-// 카테고리 옵션 상수 (value는 data.json의 형식과 일치해야 함)
+const LOCATIONS = ['어은동', '어궁동', '궁동']
 const CATEGORY_BUTTONS = [
-  { label: '모두', value: '모두' },
   { label: '한식', value: '한식' },
   { label: '고기&구이', value: '고기/구이' },
   { label: '일식', value: '일식' },
@@ -17,165 +13,129 @@ const CATEGORY_BUTTONS = [
 
 function App() {
   const [isSearchOpen, setIsSearchOpen] = useState(false)
-  // 초기값을 '모두'로 설정
-  const [selectedLocation, setSelectedLocation] = useState('모두')
-  const [selectedCategory, setSelectedCategory] = useState('모두')
+  // 다중 선택을 위해 배열로 관리
+  const [selectedLocations, setSelectedLocations] = useState([])
+  const [selectedCategories, setSelectedCategories] = useState([])
   const [results, setResults] = useState([])
 
+  // 다중 선택 핸들러 (모두 버튼 로직 포함)
+  const toggleFilter = (item, list, setList, allItems) => {
+    if (item === '모두') {
+      if (list.length === allItems.length) {
+        setList([]) // 모두 켜진 상태에서 누르면 전체 해제
+      } else {
+        setList([...allItems]) // 아니면 전체 선택
+      }
+    } else {
+      const newList = list.includes(item)
+        ? list.filter((i) => i !== item) // 이미 있으면 제거
+        : [...list, item] // 없으면 추가
+      setList(newList)
+    }
+  }
+
   const handleSearch = () => {
-    // 필터링 로직: '모두'인 경우 해당 조건 검사를 건너뜁니다.
     const filtered = restaurantData.filter((restaurant) => {
-      const locationMatch = selectedLocation === '모두' || restaurant.location === selectedLocation;
-      const categoryMatch = selectedCategory === '모두' || restaurant.category === selectedCategory;
+      // 선택된 게 없으면 전체 검색, 있으면 포함 여부 확인
+      const locationMatch = selectedLocations.length === 0 || selectedLocations.includes(restaurant.location);
+      const categoryMatch = selectedCategories.length === 0 || selectedCategories.includes(restaurant.category);
       return locationMatch && categoryMatch;
     })
 
-    // 랜덤 섞기 및 3개 추출
     const shuffled = [...filtered].sort(() => Math.random() - 0.5);
     setResults(shuffled.slice(0, 3))
     setIsSearchOpen(false) 
   }
 
-  // '모두'가 기본이므로 검색 버튼은 항상 활성화 가능 (데이터가 없을 경우 대비)
-  const searchDisabled = false
   return (
     <main className="app">
-      {/* CSS에서 중앙 정렬을 제어할 핵심 컨테이너 */}
       <div className="container">
-        
-        {/* 상단 헤더 섹션 */}
         <header className="hero">
           <p className="hero-badge">KAIST 밥약 도우미</p>
           <h1 className="hero-title">일루젼 26학번들을 위한 밥약 장소 추천</h1>
 
-          {/* 검색 필터 패널 */}
           <section className="search-panel">
-            <button
-              type="button"
-              className="search-input"
-              onClick={() => setIsSearchOpen((open) => !open)}
-            >
+            <button type="button" className="search-input" onClick={() => setIsSearchOpen(!isSearchOpen)}>
               <span>
-                {selectedLocation || selectedCategory
-                  ? `${selectedLocation || '위치'} · ${
-                      CATEGORY_BUTTONS.find(
-                        (c) => c.value === selectedCategory,
-                      )?.label || '음식 종류'
-                    }`
+                {selectedLocations.length > 0 || selectedCategories.length > 0
+                  ? `선택됨: ${selectedLocations.length + selectedCategories.length}개`
                   : '밥약 조건을 선택해 주세요'}
               </span>
-              <span className="search-input-indicator">
-                {isSearchOpen ? '접기' : '열기'}
-              </span>
+              <span className="search-input-indicator">{isSearchOpen ? '접기' : '열기'}</span>
             </button>
 
-            {/* 조건 선택 영역 (isSearchOpen이 true일 때만 노출) */}
             {isSearchOpen && (
               <div className="search-options">
+                {/* 위치 필터 */}
                 <div className="filter-group">
                   <h2 className="filter-title">위치</h2>
                   <div className="chip-row">
-                    {LOCATIONS.map((location) => (
+                    <button 
+                      className={'chip' + (selectedLocations.length === LOCATIONS.length ? ' chip--selected' : '')}
+                      onClick={() => toggleFilter('모두', selectedLocations, setSelectedLocations, LOCATIONS)}
+                    >모두</button>
+                    {LOCATIONS.map((loc) => (
                       <button
-                        key={location}
-                        type="button"
-                        className={
-                          'chip' +
-                          (selectedLocation === location ? ' chip--selected' : '')
-                        }
-                        onClick={() => setSelectedLocation(location)}
-                      >
-                        {location}
-                      </button>
+                        key={loc}
+                        className={'chip' + (selectedLocations.includes(loc) ? ' chip--selected' : '')}
+                        onClick={() => toggleFilter(loc, selectedLocations, setSelectedLocations, LOCATIONS)}
+                      >{loc}</button>
                     ))}
                   </div>
                 </div>
 
+                {/* 카테고리 필터 */}
                 <div className="filter-group">
                   <h2 className="filter-title">음식 종류</h2>
                   <div className="chip-row">
-                    {CATEGORY_BUTTONS.map((category) => (
+                    <button 
+                      className={'chip' + (selectedCategories.length === CATEGORY_BUTTONS.map(c => c.value).length ? ' chip--selected' : '')}
+                      onClick={() => toggleFilter('모두', selectedCategories, setSelectedCategories, CATEGORY_BUTTONS.map(c => c.value))}
+                    >모두</button>
+                    {CATEGORY_BUTTONS.map((cat) => (
                       <button
-                        key={category.value}
-                        type="button"
-                        className={
-                          'chip' +
-                          (selectedCategory === category.value
-                            ? ' chip--selected'
-                            : '')
-                        }
-                        onClick={() => setSelectedCategory(category.value)}
-                      >
-                        {category.label}
-                      </button>
+                        key={cat.value}
+                        className={'chip' + (selectedCategories.includes(cat.value) ? ' chip--selected' : '')}
+                        onClick={() => toggleFilter(cat.value, selectedCategories, setSelectedCategories, CATEGORY_BUTTONS.map(c => c.value))}
+                      >{cat.label}</button>
                     ))}
                   </div>
                 </div>
 
-                <button
-                  type="button"
-                  className="search-button"
-                  onClick={handleSearch}
-                  disabled={searchDisabled}
-                >
-                  검색하기
-                </button>
+                <button type="button" className="search-button" onClick={handleSearch}>추천받기</button>
               </div>
             )}
           </section>
         </header>
 
-        {/* 결과 표시 섹션 */}
+        {/* 결과 섹션 (기존과 동일) */}
         <section className="results">
           <h2 className="results-title">추천 결과</h2>
           {!results.length ? (
-            <p className="results-empty">
-              위에서 조건을 골라 <strong>검색하기</strong> 버튼을 눌러주세요.
-            </p>
+            <p className="results-empty">조건을 골라 <strong>추천받기</strong>를 눌러주세요.</p>
           ) : (
             <div className="card-grid">
-              {results.map((restaurant, index) => (
-                <article key={restaurant.id} className="restaurant-card">
-                  {/* 1. 이미지 영역 추가 */}
+              {results.map((res, index) => (
+                <article key={res.id} className="restaurant-card">
                   <div className="restaurant-image-container">
-                    <img 
-                      src={restaurant.imageUrl || 'https://via.placeholder.com/300x200?text=No+Image'} 
-                      alt={restaurant.name} 
-                      className="restaurant-image"
-                    />
+                    <img src={res.imageUrl || 'https://via.placeholder.com/300x200'} alt={res.name} className="restaurant-image" />
                     <span className="restaurant-rank-badge">{index + 1}</span>
                   </div>
-
                   <div className="card-content">
-                    {/* 순위 표시: index + 1 */}
                     <span className="restaurant-rank">{index + 1}</span>
                     <div className="restaurant-info">
-                      <h3 className="restaurant-name">{restaurant.name}</h3>
-                      <p className="restaurant-meta">
-                        {restaurant.location} · {restaurant.category}
-                      </p>
+                      <h3 className="restaurant-name">{res.name}</h3>
+                      <p className="restaurant-meta">{res.location} · {res.category}</p>
                     </div>
-                    {/* 네이버 지도 링크 버튼 */}
-                    {restaurant.naverUrl && (
-                      <a 
-                        href={restaurant.naverUrl} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="map-link"
-                      >
-                        지도 보기
-                      </a>
-                    )}
+                    {res.naverUrl && <a href={res.naverUrl} target="_blank" rel="noreferrer" className="map-link">지도</a>}
                   </div>
                 </article>
               ))}
             </div>
           )}
         </section>
-        
       </div>
     </main>
   )
 }
-
 export default App
