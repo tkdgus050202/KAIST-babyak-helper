@@ -74,7 +74,7 @@ function App() {
       <div className="container">
         <header className="hero">
           <p className="hero-badge">KAIST 밥약 도우미</p>
-          <h1 className="hero-title">일루젼 26학번들을 위한 밥약 장소 추천</h1>
+          <h1 className="hero-title">26학번 친구들을 위한 밥약 장소 추천!</h1>
 
           <section className="search-panel">
             <button type="button" className="search-input" onClick={() => setIsSearchOpen(!isSearchOpen)}>
