@@ -222,5 +222,37 @@
     "location": "어은동",
     "naverUrl": "https://map.naver.com/p/entry/place/35940716?c=19.34,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202602220219&locale=ko&svcName=map_pcv5",
     "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNjAyMTBfMTAw%2FMDAxNzcwNzI2NDIwMTMy.J-MbhJo3rBR8Os57vZsJc_BvxJrsCEfLR_0JJgF5m10g.qgJCYKQ1_dHHUlMWHIQoasBJSfiLMEptGejAumxX9Kog.JPEG%2FBBDCCB3F-63B3-403D-9AD8-6ADDF0E1DA1B.jpeg%3Ftype%3Dw1500_60_sharpen"
+  },
+  {
+    "id": 29,
+    "name": "치마치마벤또",
+    "category": "일식",
+    "location": "어궁동",
+    "naverUrl": "https://map.naver.com/p/entry/place/13433920?c=18.69,0,0,0,dh&placePath=/review?additionalHeight=76&fromPanelNum=1&locale=ko&svcName=map_pcv5&timestamp=202603081536&additionalHeight=76&timestamp=202603081536&locale=ko&svcName=map_pcv5&fromPanelNum=1",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20150901_245%2F1441035992137mpa6h_JPEG%2FSUBMIT_1275942949415_13433920.jpg"
+  },
+  {
+    "id": 29,
+    "name": "베네파스타하우스",
+    "category": "양식",
+    "location": "어은동",
+    "naverUrl": "https://map.naver.com/p/entry/place/1855080324?c=18.80,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202603081539&locale=ko&svcName=map_pcv5",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20241205_87%2F1733387651014h3P6h_JPEG%2FIMG_2902.jpeg"
+  },
+  {
+    "id": 29,
+    "name": "마쯔미라멘",
+    "category": "일식",
+    "location": "어은동",
+    "naverUrl": "https://map.naver.com/p/entry/place/37210546?c=18.80,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202603081541&locale=ko&svcName=map_pcv5",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20190404_209%2F1554340046599SVyxD_JPEG%2FydKhTwXwfkFccyKuIFbbQbay.jpg"
+  },
+  {
+    "id": 30,
+    "name": "버기즈 어은",
+    "category": "양식",
+    "location": "어은동",
+    "naverUrl": "https://map.naver.com/p/entry/place/1252355637?c=18.10,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202603081544&locale=ko&svcName=map_pcv5",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240619_145%2F1718756174755SlA5d_JPEG%2FIMG_9236.jpeg"
   }
 ]
