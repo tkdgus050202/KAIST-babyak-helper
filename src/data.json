@@ -112,6 +112,14 @@
     "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20251005_178%2F17596372029547Wglk_JPEG%2F1000001508.jpg"
   },
   {
+    "id": 15,
+    "name": "어은스시",
+    "category": "일식",
+    "location": "어은동",
+    "naverUrl": "https://map.naver.com/p/entry/place/36203184?c=15.00,0,0,3,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202603101633&locale=ko&svcName=map_pcv5",
+    "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20150901_27%2F1441049402224xYWjG_JPEG%2F36203184_0.jpg"
+  },
+  {
     "id": 16,
     "name": "반마이",
     "category": "아시안",
